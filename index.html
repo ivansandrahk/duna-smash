@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duna Smash | Burgers na Brasa, Inspirados no Mar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        duna: {
+                            brasa: '#E05A1F', // Laranja do fogo/pôr do sol das dunas
+                            mar: '#0E3A53',   // Azul mar profundo
+                            areia: '#FAF6F0', // Fundo claro e quente
+                            dark: '#0A1E29',  // Azul quase preto para contrastes
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-duna-areia text-slate-800 antialiased font-sans">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-orange-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <div class="bg-duna-brasa text-white px-3 py-1.5 rounded-lg font-black text-xl tracking-wider">
+                    DUNA<span class="text-duna-dark">.</span>
+                </div>
+                <span class="font-extrabold text-lg tracking-wider text-duna-mar hidden sm:inline">SMASH BURGER</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 font-semibold text-slate-600">
+                <a href="#proposta" class="hover:text-duna-brasa transition-colors">Nossa Proposta</a>
+                <a href="#cardapio" class="hover:text-duna-brasa transition-colors">Cardápio</a>
+                <a href="#producao" class="hover:text-duna-brasa transition-colors">Produção Rápida</a>
+                <a href="#delivery" class="hover:text-duna-brasa transition-colors">Delivery</a>
+            </nav>
+
+            <div>
+                <!-- Substitua pelo link real do seu cardápio digital ou WhatsApp -->
+                <a href="https://wa.me/5584999999999?text=Ol%C3%A1%21+Quero+fazer+um+pedido+no+Duna+Smash." target="_blank" class="bg-duna-brasa text-white px-5 py-2.5 rounded-xl font-bold text-sm hover:bg-duna-dark transition-all shadow-md flex items-center gap-2">
+                    <i class="fab fa-whatsapp text-lg"></i> Pedir Agora
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-white to-duna-areia py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Text Content -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-bold bg-orange-100 text-duna-brasa">
+                    <i class="fa-solid fa-fire"></i> FEITO NA BRASA. INSPIRADO NO MAR.
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-black text-duna-dark leading-tight tracking-tight">
+                    O smash premium que combina com o seu litoral.
+                </h1>
+                <p class="text-lg text-slate-600 max-w-xl mx-auto lg:mx-0">
+                    Nascido no litoral de Pitangui, o Duna Smash traz hambúrgueres artesanais suculentos com a energia e a praticidade que sua noite de praia merece.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                    <a href="#cardapio" class="bg-duna-brasa text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-duna-dark transition-all shadow-lg text-center">
+                        Ver Cardápio Completo
+                    </a>
+                    <a href="https://wa.me/5584999999999?text=Quero+fazer+um+pedido" target="_blank" class="bg-white text-duna-mar border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition-all text-center flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp"></i> Fazer Pedido
+                    </a>
+                </div>
+            </div>
+
+            <!-- Image/Visual Placeholder -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <div class="absolute inset-0 bg-duna-brasa/10 rounded-3xl transform rotate-3 scale-95"></div>
+                    <!-- Substitua o src pela foto de um belo hambúrguer -->
+                    <div class="relative bg-white border border-slate-100 rounded-3xl p-6 shadow-xl flex flex-col items-center">
+                        <div class="w-full bg-slate-100 rounded-2xl aspect-square flex items-center justify-center overflow-hidden mb-6 relative">
+                            <i class="fa-solid fa-hamburger text-8xl text-duna-brasa/20"></i>
+                            <div class="absolute bottom-4 left-4 right-4 bg-duna-dark/80 backdrop-blur-sm text-white p-3 rounded-xl flex justify-between items-center text-xs">
+                                <span>📍 Orla de Pitangui, RN</span>
+                                <span class="text-duna-brasa font-bold">Aberto para Delivery</span>
+                            </div>
+                        </div>
+                        <div class="w-full flex justify-between items-center">
+                            <div>
+                                <h3 class="text-xl font-bold text-duna-dark">Duna Classic</h3>
+                                <p class="text-sm text-slate-500">Cebola caramelizada e molho especial</p>
+                            </div>
+                            <span class="bg-orange-100 text-duna-brasa text-md font-extrabold px-3 py-1 rounded-full">R$ 28,90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proposta Section -->
+    <section id="proposta" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-duna-dark">Simplicidade, Praticidade e Muita Crostinha</h2>
+                <p class="text-slate-600 text-lg">Criamos um cardápio enxuto, priorizando a qualidade de cada ingrediente para que você receba uma refeição premium sem enrolação.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                <!-- Vantagem 1 -->
+                <div class="p-8 rounded-2xl bg-duna-areia/50 border border-slate-100 space-y-4 text-center md:text-left">
+                    <div class="w-12 h-12 rounded-xl bg-duna-brasa text-white flex items-center justify-center text-xl mx-auto md:mx-0">
+                        <i class="fa-solid fa-fire-burner"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-duna-dark">Técnica Smash Burger</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        A carne é prensada direto na chapa quente, criando aquela crosta caramelizada deliciosa que preserva toda a suculência e o sabor intenso.
+                    </p>
+                </div>
+                <!-- Vantagem 2 -->
+                <div class="p-8 rounded-2xl bg-duna-areia/50 border border-slate-100 space-y-4 text-center md:text-left">
+                    <div class="w-12 h-12 rounded-xl bg-duna-mar text-white flex items-center justify-center text-xl mx-auto md:mx-0">
+                        <i class="fa-solid fa-shrimp"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-duna-dark">Inspirado no Litoral</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Uma experiência leve e descontraída que combina ingredientes clássicos e toques regionais, perfeitos para a sua noite à beira-mar.
+                    </p>
+                </div>
+                <!-- Vantagem 3 -->
+                <div class="p-8 rounded-2xl bg-duna-areia/50 border border-slate-100 space-y-4 text-center md:text-left">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl mx-auto md:mx-0">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-duna-dark">Ingredientes Frescos</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Blend de carne fresca preparada diariamente, queijo derretido de verdade, pães artesanais tostados na manteiga e molhos autorais.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio Section -->
+    <section id="cardapio" class="py-20 bg-duna-areia">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-duna-dark">Os Destaques das Nossas Dunas</h2>
+                <p class="text-slate-600">Explore as nossas criações preparadas na hora.</p>
+            </div>
+
+            <!-- Grid de Hambúrgueres -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Duna Classic -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="p-6 space-y-4">
+                        <div class="bg-slate-100 aspect-[4/3] rounded-xl flex items-center justify-center relative overflow-hidden">
+                            <i class="fa-solid fa-hamburger text-6xl text-slate-300"></i>
+                            <span class="absolute top-4 right-4 bg-duna-brasa text-white text-xs font-bold px-3 py-1 rounded-full">Favorito</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-extrabold text-xl text-duna-dark">Duna Classic</h3>
+                            <p class="text-sm text-slate-600">Smash burger artesanal, cheddar derretido, cebola caramelizada e molho especial da casa no pão brioche.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 border-t border-slate-50 flex items-center justify-between">
+                        <span class="text-xl font-black text-duna-mar">R$ 28,90</span>
+                        <a href="https://wa.me/5584999999999?text=Quero+o+Duna+Classic" target="_blank" class="bg-duna-brasa text-white font-bold text-sm px-4 py-2 rounded-lg transition-colors hover:bg-duna-dark"> Pedir </a>
+                    </div>
+                </div>
+
+                <!-- Brasa Double -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="p-6 space-y-4">
+                        <div class="bg-slate-100 aspect-[4/3] rounded-xl flex items-center justify-center relative overflow-hidden">
+                            <i class="fa-solid fa-hamburger text-6xl text-slate-300"></i>
+                            <span class="absolute top-4 right-4 bg-duna-mar text-white text-xs font-bold px-3 py-1 rounded-full">Double Smash</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-extrabold text-xl text-duna-dark">Brasa Double</h3>
+                            <p class="text-sm text-slate-600">Dois smash burgers, cheddar duplo bem derretido, fatias de bacon crocante e maionese defumada artesanal.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 border-t border-slate-50 flex items-center justify-between">
+                        <span class="text-xl font-black text-duna-mar">R$ 36,90</span>
+                        <a href="https://wa.me/5584999999999?text=Quero+o+Brasa+Double" target="_blank" class="bg-duna-brasa text-white font-bold text-sm px-4 py-2 rounded-lg transition-colors hover:bg-duna-dark"> Pedir </a>
+                    </div>
+                </div>
+
+                <!-- Pitangui Burger -->
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div class="p-6 space-y-4">
+                        <div class="bg-slate-100 aspect-[4/3] rounded-xl flex items-center justify-center relative overflow-hidden">
+                            <i class="fa-solid fa-hamburger text-6xl text-slate-300"></i>
+                            <span class="absolute top-4 right-4 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">Litoral Vibe</span>
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="font-extrabold text-xl text-duna-dark">Pitangui Burger</h3>
+                            <p class="text-sm text-slate-600">Blend artesanal, queijo coalho de primeira grelhado na chapa, geleia de bacon caseira e folhas de rúcula fresca.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 border-t border-slate-50 flex items-center justify-between">
+                        <span class="text-xl font-black text-duna-mar">R$ 34,90</span>
+                        <a href="https://wa.me/5584999999999?text=Quero+o+Pitangui+Burger" target="_blank" class="bg-duna-brasa text-white font-bold text-sm px-4 py-2 rounded-lg transition-colors hover:bg-duna-dark"> Pedir </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Outras Opções (Acompanhamento e Bebidas) -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Batatas -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 flex items-center justify-between shadow-sm">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 rounded-xl bg-orange-100 text-duna-brasa flex items-center justify-center text-3xl">
+                            <i class="fa-solid fa-fries"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-duna-dark">Batata Duna</h4>
+                            <p class="text-sm text-slate-500">Super crocantes, temperadas com especiarias exclusivas da casa.</p>
+                        </div>
+                    </div>
+                    <span class="font-extrabold text-duna-mar">R$ 14,90</span>
+                </div>
+
+                <!-- Milkshakes -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 flex items-center justify-between shadow-sm">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 rounded-xl bg-blue-100 text-duna-mar flex items-center justify-center text-3xl">
+                            <i class="fa-solid fa-glass-water"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-duna-dark">Milk Shakes Artesanais</h4>
+                            <p class="text-sm text-slate-500">Nutella, Ovomaltine, Chocolate Belga ou Morango Cremoso.</p>
+                        </div>
+                    </div>
+                    <span class="font-extrabold text-duna-mar">R$ 18,90</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produção Inteligente / Tempo -->
+    <section id="producao" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="space-y-6">
+                <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-bold bg-blue-100 text-duna-mar">
+                    ⏱️ OPERAÇÃO ULTRA EFICIENTE
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-duna-dark">Mais Sabor em Menos Tempo</h2>
+                <p class="text-slate-600">
+                    A nossa cozinha foi desenhada com processos inteligentes e padronizados para garantir que o seu hambúrguer não demore. Da chapa à expedição, trabalhamos com uma meta de entrega rígida.
+                </p>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-check-circle text-emerald-600 mt-1"></i>
+                        <div>
+                            <strong class="text-slate-800">Meta Operacional:</strong> Pedido preparado, embalado e pronto em até 20 minutos.
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <i class="fa-solid fa-check-circle text-emerald-600 mt-1"></i>
+                        <div>
+                            <strong class="text-slate-800">Controle de Qualidade:</strong> Ingredientes fatiados e preparados diariamente para máxima refrescância.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-duna-dark text-white p-8 sm:p-12 rounded-3xl relative overflow-hidden flex flex-col justify-between aspect-video lg:aspect-auto">
+                <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-duna-brasa/20 rounded-full blur-2xl"></div>
+                <div>
+                    <h3 class="text-3xl sm:text-5xl font-black text-duna-brasa">Até 20 Min.</h3>
+                    <p class="text-lg font-bold text-slate-200 mt-2">Seu pedido pronto para ser expedido.</p>
+                </div>
+                <p class="text-sm text-slate-400 mt-8">Menos tempo de espera significa que você come seu smash super quente e suculento.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Delivery Premium Section -->
+    <section id="delivery" class="py-20 bg-duna-mar text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-duna-mar to-slate-950 opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-6 space-y-6">
+                <span class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-bold bg-orange-500/20 text-duna-brasa">
+                    📦 EMBALAGEM EXCLUSIVA
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold">Delivery com Qualidade Premium</h2>
+                <p class="text-slate-300 leading-relaxed">
+                    Sabemos que comer na praia ou em casa exige cuidado extra. Por isso, desenvolvemos embalagens especiais de alta qualidade que mantêm a temperatura da carne, conservam o pão macio e não deixam o seu hambúrguer perder a apresentação perfeita até chegar em você.
+                </p>
+                <div class="flex gap-6 pt-4">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-temperature-arrow-up text-duna-brasa text-xl"></i>
+                        <span class="text-sm text-slate-200">Preserva o Calor</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-duna-brasa text-xl"></i>
+                        <span class="text-sm text-slate-200">Embalagem Segura</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 text-center space-y-6">
+                <h3 class="text-2xl font-bold">Peça direto em Pitangui</h3>
+                <p class="text-slate-300 text-sm">Atendemos moradores, veranistas, turistas e hotéis da região com rapidez.</p>
+                
+                <div class="p-4 bg-white/10 rounded-2xl flex items-center justify-between text-left">
+                    <div>
+                        <span class="text-xs text-slate-400 block">Formas de Pagamento</span>
+                        <strong class="text-sm">Pix, Cartões de Débito e Crédito</strong>
+                    </div>
+                    <i class="fa-solid fa-credit-card text-xl text-duna-brasa"></i>
+                </div>
+
+                <a href="https://wa.me/5584999999999?text=Ol%C3%A1%21+Gostaria+de+fazer+um+pedido+para+entrega." target="_blank" class="w-full bg-duna-brasa text-white block py-4 rounded-xl font-bold hover:bg-white hover:text-duna-dark transition-all shadow-lg">
+                    Chamar no WhatsApp do Delivery
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-duna-dark text-slate-400 py-16 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            
+            <div class="md:col-span-2 space-y-4">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-duna-brasa text-white px-2.5 py-1 rounded font-black text-lg">
+                        DUNA
+                    </div>
+                    <span class="font-extrabold text-white text-md tracking-wider">SMASH</span>
+                </div>
+                <p class="text-sm text-slate-400 max-w-sm">
+                    Inspirado no mar e feito na brasa. Um conceito de smash burger artesanal premium no litoral norte potiguar.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-bold text-white text-md">Funcionamento</h4>
+                <ul class="text-sm space-y-2">
+                    <li>Quinta a Domingo</li>
+                    <li>Das 18:00 às 23:00</li>
+                    <li class="text-duna-brasa">📍 Pitangui, RN</li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-bold text-white text-md">Links Úteis</h4>
+                <ul class="text-sm space-y-2">
+                    <li><a href="#cardapio" class="hover:text-white">Cardápio</a></li>
+                    <li><a href="#proposta" class="hover:text-white">Nossa Proposta</a></li>
+                    <li><a href="https://wa.me/5584999999999" class="hover:text-white">Contato Suporte</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Duna Smash Burger. Todos os direitos reservados.
+            </p>
+            <div class="flex space-x-6 text-xl">
+                <a href="#" class="hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
